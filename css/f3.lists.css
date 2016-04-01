@@ -1,0 +1,1 @@
+ul.list-data{border-radius:5px}ul.list-data li{padding:10px;border:1px solid #ccc;margin-bottom:-1px}ul.list-data li.list-title{background:#F7F7F7}ul.list-data li:first-child{border-top-left-radius:5px;border-top-right-radius:5px}ul.list-data li:last-child{border-bottom-left-radius:5px;border-bottom-right-radius:5px}
