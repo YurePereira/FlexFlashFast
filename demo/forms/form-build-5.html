@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Exemplo construíndo um formulário</title>
+    <link rel="stylesheet" href="../../css/reset.css" charset="utf-8">
+    <link rel="stylesheet" href="../../css/f3.gridsystem.css" charset="utf-8">
+    <link rel="stylesheet" href="../../css/f3.texts.css" charset="utf-8">
+    <!-- <link rel="stylesheet" href="../../css/f3.forms.css" charset="utf-8"> -->
+    <link rel="stylesheet" href="../../css/f3.form-build.css" charset="utf-8">
+    <link rel="stylesheet" href="../../css/f3.buttons.css" charset="utf-8">
+
+    <style media="screen">
+
+    #header {
+
+      height: 40px;
+      background-color: #888;
+
+    }
+
+    #content {
+
+      min-height: 400px;
+      margin: 20px auto 50px;
+
+    }
+
+    #footer {
+
+      height: 40px;
+      background-color: #888;
+
+    }
+
+    </style>
+
+  </head>
+  <body>
+
+    <header class="container-full" id="header">
+      <div class="container">
+        <div class="col-12">
+          F3 - Flex Flash Fast
+        </div>
+      </div>
+    </header>
+
+    <div class="container" id="content">
+      <div class="col-12">
+
+        <h2>Exemplo construíndo um formulário</h2>
+
+        <form class="form form-square" action="#" method="post">
+
+          <div class="form-row">
+            <label class="col-2" for="">Filed number one:</label>
+            <input type="text" class="col-10" name="filed-number-one" value="">
+          </div>
+
+          <div class="form-row">
+            <label class="col-2" for="">Filed number two:</label>
+            <input type="text" class="col-10" name="filed-number-two" value="">
+          </div>
+
+          <div class="form-row">
+            <label class="col-2" for="">Filed number three:</label>
+            <input type="text" class="col-10" name="filed-number-three" value="">
+          </div>
+
+          <div class="form-row">
+            <label class="col-2" for="">Filed number three:</label>
+            <textarea name="name" class="col-10" rows="5"></textarea>
+          </div>
+
+          <div class="form-row">
+            <label class="col-2" for="">Filed number three:</label>
+            <div class="col-10">
+
+              <input type="checkbox" name="chk-1" id="chk-1" value="">
+              <label for="chk-1">Checkbox</label>
+
+              <input type="checkbox" name="chk-2" id="chk-2" value="">
+              <label for="chk-2">Checkbox</label>
+
+              <input type="checkbox" name="chk-3" id="chk-3" value="">
+              <label for="chk-3">Checkbox</label>
+
+              <input type="checkbox" name="chk-4" id="chk-4" value="">
+              <label for="chk-4">Checkbox</label>
+
+            </div>
+          </div>
+
+          <div class="form-row">
+            <label class="col-2" for="">Filed number three:</label>
+            <div class="col-10">
+
+              <input type="radio" name="rd-1" id="rd-1" value="">
+              <label for="rd-1">Radio</label>
+
+              <input type="radio" name="rd-2" id="rd-2" value="">
+              <label for="rd-2">Radio</label>
+
+              <input type="radio" name="rd-3" id="rd-3" value="">
+              <label for="rd-3">Radio</label>
+
+              <input type="radio" name="rd-4" id="rd-4" value="">
+              <label for="rd-4">Radio</label>
+
+            </div>
+          </div>
+
+          <div class="form-row">
+            <label class="col-2" for="">Filed number three:</label>
+            <div class="col-8">
+              <input type="file" name="" value="" placeholder="">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <label class="col-2" for="">Filed number one:</label>
+            <select class="col-10" name="">
+              <optgroup label="Dropdown header">
+                <option name="slc-1">Selected Item</option>
+                <option name="slc-2">Selected Item</option>
+                <option name="slc-3">Selected Item</option>
+                <option name="slc-4">Selected Item</option>
+              </optgroup>
+            </select>
+          </div>
+
+          <div class="form-row text-right">
+            <input type="button" class="btn-blue btn-medium btn-half-round" name="name" value="Button">
+            <input type="button" class="btn-blue btn-medium" name="name" value="Button">
+          </div>
+
+        </form>
+
+      </div>
+    </div>
+
+    <footer class="container-full" id="footer">
+
+      <div class="container">
+        <div class="col-12">
+          F3 - Flex Flash Fast
+        </div>
+      </div>
+
+    </footer>
+  </body>
+</html>
