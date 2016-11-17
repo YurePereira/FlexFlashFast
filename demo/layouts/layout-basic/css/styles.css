@@ -1,0 +1,44 @@
+
+body {
+  background-color: #5F9596;
+}
+
+#header {
+  min-height: 140px;
+  background-color: #786161;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+#header #logo {
+  height: 100px;
+}
+
+#header #menu {
+  background-color: #FE6262;
+}
+
+#header #menu ul li {
+  background-color: #FE6262;
+}
+
+#header #menu ul li:hover {
+  background-color: #FF4141;
+}
+
+#header #menu ul li:hover {
+  text-decoration: underline;
+}
+
+#content {
+  min-height: 400px;
+  background-color: #FAF1D2;
+  margin-bottom: 10px;
+}
+
+#footer {
+  height: 40px;
+  background-color: #FF6060;
+  margin-bottom: 10px;
+  padding-top: 13px;
+}
