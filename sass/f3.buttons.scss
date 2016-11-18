@@ -19,6 +19,7 @@
   color: #535353;
   background-color: $colorDefault;
   font-family: arial;
+  text-decoration: none;
   
   &:hover {
     background-color: $colorDefaultHover;
@@ -50,11 +51,6 @@
   color: $colorTextDisabled!important;
 }
 
-
-.btn-disabled {
-  @extends 
-}
-
 .btn-super-small {
 	padding: 3px;
 	font-size: 10px;
@@ -76,7 +72,7 @@
 }
 
 @media only screen and (max-width: 600px) {
-
+  //...
 }
 
 @media only screen and (max-width: 480px) {
@@ -87,7 +83,7 @@
 	}
 }
 
-/* Button Gradient Colors */
+/* Button Colors */
 
 .btn-blue,
 .btn-orange,
@@ -230,4 +226,138 @@
 
 .btn-full {
   width: 100%;
+}
+
+//Buttons Gruop
+.btn-gruop {
+
+  display: inline-block;
+
+  .btn-super-small,
+  .btn-small,
+  .btn-medium,
+  .btn-great {
+
+    border-radius: 0 !important;
+    //margin: auto -2px;
+    margin-left: -1px;
+    float: left;
+
+    &:first-child {
+      border-top-left-radius: 3px!important;
+      border-bottom-left-radius: 3px!important;
+    }
+
+    &:last-child {
+      border-top-right-radius: 3px!important;
+      border-bottom-right-radius: 3px!important;
+    }
+
+  }
+
+  .btn-half-square {
+  
+    &:first-child {
+      border-radius: 0 0 0 18px!important;
+    }
+
+    &:last-child {
+      border-radius: 0 18px 0 0!important;
+    }
+
+  }
+
+  .btn-round {
+    
+    &:first-child {
+      border-top-left-radius: 50px!important;
+      border-bottom-left-radius: 50px!important;
+    }
+
+    &:last-child {
+      border-top-right-radius: 50px!important;
+      border-bottom-right-radius: 50px!important;
+    }
+    
+  }
+
+  .btn-half-round {
+    
+    &:first-child {
+      border-top-left-radius: 8px!important;
+      border-bottom-left-radius: 8px!important;
+    }
+
+    &:last-child {
+      border-top-right-radius: 8px!important;
+      border-bottom-right-radius: 8px!important;
+    }
+    
+  }
+
+  .btn-half-square {
+
+    &.btn-super-small {
+
+      &:first-child {
+        border-bottom-left-radius: 10px!important;
+      }
+
+      &:last-child {
+        border-top-right-radius: 10px!important;
+      }
+
+    }
+
+    &.btn-small {
+
+      &:first-child {
+        border-bottom-left-radius: 12px!important;
+      }
+
+      &:last-child {
+        border-top-right-radius: 12px!important;
+      }
+
+    }
+
+    &.btn-medium {
+
+      &:first-child {
+        border-bottom-left-radius: 18px!important;
+      }
+
+      &:last-child {
+        border-top-right-radius: 18px!important;
+      }
+
+    }
+
+    &.btn-great {
+
+      &:first-child {
+        border-bottom-left-radius: 20px!important;
+      }
+
+      &:last-child {
+        border-top-right-radius: 20px!important;
+      }
+
+    }
+    
+  }
+
+  .btn-square {
+
+    &.btn-super-small,
+    &.btn-small,
+    &.btn-medium,
+    &.btn-great {
+  
+      border-radius: 0!important;
+
+    }
+
+  }
+
 }
