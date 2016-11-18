@@ -1,0 +1,160 @@
+/*
+Author: Francisco Yure <yure.pereira@weyes.com.br>;
+Date: 2015-09-24;
+Enterprise: Weyes <weyes.com.br>;
+*/
+
+$font-size-caption: 20px;
+
+.table-responsive {
+  overflow: auto;
+}
+
+.table-no-border {
+  border-style: none;
+}
+
+/* List datas */
+table {
+
+  &.table {
+
+    width: 100%;
+    margin: 5px 0;
+
+    /* Title Table */
+    caption {
+      font-size: $font-size-caption;
+      font-weight: normal;
+      padding: 10px 0;
+    }
+
+    tr th, tr td {
+      padding: 10px;
+      border: 1px solid #ccc;
+      word-break: break-word;
+      font-size: 12px;
+    }
+
+    tr {
+      td {
+
+        &.table-header {
+          font-size: 13px;
+          font-weight: 700;
+          background: #FBFBFB;
+        }
+
+        &.vertical-align-top {
+          vertical-align: top;
+        }
+
+        &.vertical-align-bottom {
+          vertical-align: bottom;
+        }
+
+        &.vertical-align-center {
+          vertical-align: middle;
+        }
+
+      }
+    }
+
+    /* Header Table */
+    thead {
+      tr {
+        background: #FBFBFB;
+        th {
+          font-size: 13px;
+          font-weight: 700;
+          padding: 10px 5px;
+          border-bottom: 1px solid #909090;
+        }
+      }
+    }
+
+    /* Body Table */
+    tbody {
+      tbody {
+        tr {
+          td {}
+        }
+      }
+    }
+
+    /* Footer table */
+    tfoot {
+      tr {
+        td {}
+      }
+    }
+
+    &.table-list {
+      tr > th, tr > td {
+        border: 0;
+        border-top: 1px solid #ccc;
+      }
+    }
+
+    /* Changes color when the mouse hovers over a table row */
+    &.table-hover {
+      tbody {
+        tr:hover {
+          background: #F8F8F8;
+          td:hover {
+            background: #EDEDED;
+          }
+        }
+      }
+    }
+
+    /* Table Size */
+    &.table-super-small {
+
+      // thead {
+      //   tr {
+      //     th {
+      //       font-size: 13px;
+      //       font-weight: 700;
+      //       padding: 10px 5px;
+      //     }
+      //   }
+      // }
+
+      tr th, tr td {
+        padding: 5px;
+        font-size: .8em;
+      }
+
+    }
+
+    &.table-small {
+
+      tr th, tr td {
+        padding: 7px;
+      	font-size: 1em;
+      }
+
+    }
+
+    &.table-medium {
+
+      tr th, tr td {
+        padding: 12px;
+      	font-size: 1.2em;
+      }
+
+    }
+
+    &.table-great {
+
+      tr th, tr td {
+        padding: 15px;
+      	font-size: 1.4em;
+      }
+
+    }
+
+  }
+
+}

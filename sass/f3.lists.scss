@@ -1,0 +1,34 @@
+/*
+Author: Francisco Yure <yure.pereira@weyes.com.br>;
+Date: 2015-01-30;
+Enterprise: Weyes <weyes.com.br>;
+*/
+
+/* List Two */
+ul.list-data {
+
+	border-radius: 5px;
+
+	li {
+
+		&.list-title {
+			background: #F7F7F7;
+		}
+
+		&:first-child {
+			border-top-left-radius: 5px;
+			border-top-right-radius: 5px;
+		}
+
+		&:last-child {
+			border-bottom-left-radius: 5px;
+			border-bottom-right-radius: 5px;
+		}
+
+		padding: 10px;
+		border: 1px solid #ccc;
+		margin-bottom: -1px;
+
+	}
+
+}

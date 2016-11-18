@@ -1,0 +1,92 @@
+/*
+Author: Francisco Yure <yure.pereira@weyes.com.br>;
+Date: 2015-01-30;
+Enterprise: Weyes <weyes.com.br>;
+*/
+
+ul.pagination {
+	margin: 5px 0;
+	&.float-right {
+		float: right;
+	}
+	&.without-margin li {
+		margin: 5px 0;
+	}
+	&.small > li > a, &.super-small > .current-pagination {
+		padding: 5px;
+		font-size: .8em;
+	}
+	&.small > {
+		li > a, .current-pagination {
+			padding: 10px;
+			font-size: 1em;
+		}
+	}
+	&.medium > {
+		li > a, .current-pagination {
+			padding: 15px;
+			font-size: 1.2em;
+		}
+	}
+	&.great > {
+		li > a, .current-pagination {
+			padding: 20px;
+			font-size: 1.4em;
+		}
+	}
+	&.border-rounded-5 > li, &.border-rounded-10 > li {
+		border-radius: 5px;
+	}
+	&.border-rounded-full > li {
+		border-radius: 50px;
+	}
+	> {
+		li {
+			float: left;
+			background: #698495;
+			margin: 5px;
+			color: #fff;
+			cursor: pointer;
+			&:hover {
+				background: #172D3A;
+			}
+			> a {
+				color: #fff;
+				display: block;
+				padding: 10px;
+			}
+		}
+		.first-pagination {
+			margin-left: 0;
+			margin-right: 10px;
+		}
+		.prev-pagination {
+			margin-left: 0;
+		}
+		.next-pagination {
+			margin-right: 0;
+		}
+		.last-pagination {
+			margin-right: 0;
+			margin-left: 10px;
+		}
+		.current-pagination {
+			padding: 10px;
+			background: #4B616F;
+			cursor: default;
+			&:hover {
+				background: #4B616F;
+			}
+		}
+	}
+}
+
+/* Float right box pagination */
+
+/* Pagination without margin left and right */
+
+/* Size pagination */
+
+/* Border pagination */
+
+/* General settings */

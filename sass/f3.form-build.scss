@@ -1,0 +1,135 @@
+/*
+Author: Francisco Yure <yure.pereira@weyes.com.br>;
+Date: 2016-01-25;
+Enterprise: Weyes <weyes.com.br>;
+*/
+
+@mixin box-shadow($outset, $inset) {
+	-webkit-box-shadow: 1px 1px 3px #C2C2C2, inset 2px 2px 2px 0 rgba(168, 222, 255, 0.5);
+	-webkit-box-shadow: $outset, $inset;
+	-moz-box-shadow: $outset, $inset;
+	box-shadow: $outset, $inset;
+}
+
+/* Fields */
+
+input,
+textarea,
+select {
+	&:disabled,
+	&:disabled:hover,
+	&:disabled:active,
+	&:disabled:focus {
+		background: #DADADA;
+		border: #888 1px solid;
+		color: #808080;
+		text-shadow: 1px 1px 2px #FAFAFA;
+		cursor: default;
+	}
+}
+
+textarea {
+	overflow: auto;
+}
+
+input {
+	&[type=email],
+	&[type=number],
+	&[type=password],
+	&[type=range],
+	&[type=search],
+	&[type=tel],
+	&[type=text],
+	&[type=url] {
+
+		padding: 7px !important;
+		resize: none;
+		outline: none;
+		border: 1px solid #888;
+		box-shadow: 1px 1px 1px #C2C2C2;
+		border-radius: 3px;
+
+		&:focus {
+			@include box-shadow(1px 1px 3px #C2C2C2, inset 2px 2px 2px 0 rgba(168, 222, 255, 0.5));
+			border-color: #007ECB;
+		}
+	
+	}
+}
+
+select, textarea {
+	padding: 7px !important;
+	resize: none;
+	outline: none;
+	border: 1px solid #888;
+	box-shadow: 1px 1px 3px #C2C2C2;
+	border-radius: 3px;
+}
+
+select:focus, textarea:focus, .field-selected {
+	@include box-shadow(1px 1px 3px #C2C2C2, inset 2px 2px 2px 0 rgba(168, 222, 255, 0.5));
+	border-color: #007ECB;
+}
+
+form.form {
+
+  .form-row {
+
+    label {
+      display: inline-block;
+      line-height: 17px;
+      font-size: 14px;
+      padding-top: 8px !important;
+      padding-bottom: 8px !important;
+    }
+
+    .form-data {
+      width: 100%;
+    }
+
+    .col-1,
+    .col-2,
+    .col-3,
+    .col-4,
+    .col-5,
+    .col-6,
+    .col-7,
+    .col-8,
+    .col-9,
+    .col-10,
+    .col-11,
+    .col-12 {
+      padding: 0 5px;
+    }
+
+    width: 100%;
+    margin: 4px 0 2px;
+    display: inline-block;
+
+  }
+
+  //Form types inputs
+  &.form-square {
+
+	select, 
+	textarea, 
+	input[type=email],
+	input[type=number],
+	input[type=password],
+	input[type=range],
+	input[type=search],
+	input[type=tel],
+	input[type=text],
+	input[type=url],
+
+	input[type=button],
+	input[type=submit],
+	input[type=reset]
+	button,
+	{
+		border-radius: 0;
+	}
+  	
+  }
+
+}

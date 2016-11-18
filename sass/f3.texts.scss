@@ -1,0 +1,99 @@
+/*
+Author: Francisco Yure <yure.pereira@weyes.com.br>;
+Date: 2015-01-04;
+Enterprise: Weyes <weyes.com.br>;
+*/
+.nowrap {
+	white-space: nowrap;
+}
+.text-center {
+	text-align: center;
+}
+.text-left {
+	text-align: left;
+}
+.text-right {
+	text-align: right;
+}
+.text-justify {
+	text-align: justify;
+}
+
+@media only screen and (max-width: 768px) {
+	label.text-right {
+		text-align: left;
+	}
+}
+
+/* Titles */
+h1, h2, h3, h4, h5, h6 {
+	margin: 5px 0;
+	padding: 10px 0;
+}
+
+h1 {font-size: 30px}
+h2 {font-size: 24px}
+h3 {font-size: 20px}
+h4 {font-size: 18px}
+h5 {font-size: 16px}
+h6 {font-size: 14px}
+/* Paragraph */
+p {
+	font-size: 12px;
+	margin: 0 0 10px;
+}
+/* Link */
+a {
+	color: #005DA0;;
+	text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+	a {
+		padding: 10px 0;
+	}
+}
+
+a:hover {
+	text-decoration: underline;
+}
+/* Message Types */
+.error, .warning, .notice, .message, .success, .code {
+	margin: 5px 0;
+	padding: 10px;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 5px;
+}
+.error {
+	background: #FCE4E4;
+	border-color: #FF2929;
+}
+.warning {
+	background: #FFEACD;
+	border-color: #FF9100;
+}
+.notice {
+	background: #FAFDC1;
+	border-color: #FFFC07;
+}
+.message {
+	background: #E6EBED;
+	border-color: #296DFF;
+}
+.success {
+	background: #D4FFB7;
+	border-color: #60FF4E;
+}
+.code {
+	background: #F0F0F0;
+	border-color: #CBCBCB;
+}
+
+hr {
+	border-top: 1px solid #ccc;
+	border-bottom: none;
+	border-left: none;
+	border-right: none;
+	margin: 10px 0;
+}

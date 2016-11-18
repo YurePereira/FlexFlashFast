@@ -1,0 +1,155 @@
+/*
+Author: Francisco Yure <yure.pereira@weyes.com.br>;
+Date: 2015-04-26;
+Enterprise: Weyes <weyes.com.br>;
+*/
+
+/* Mixins */
+@mixin linear-gradient($color1, $porcent1, $color2, $porcent2, $color3, $porcent3) {
+	background: $color1;
+	background: -moz-linear-gradient(top, $color1 $porcent1, $color2 $porcent2, $color3 $porcent3);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop($porcent1, $color1), color-stop($porcent2, $color2), color-stop($porcent3, $color3));
+	background: -webkit-linear-gradient(top, $color1 $porcent1, $color2 $porcent2, $color3 $porcent3);
+	background: -o-linear-gradient(top, $color1 $porcent1, $color2 $porcent2, $color3 $porcent3);
+	background: -ms-linear-gradient(top, $color1 $porcent1, $color2 $porcent2, $color3 $porcent3);
+	background: linear-gradient(to bottom, $color1 $porcent1, $color2 $porcent2, $color3 $porcent3);
+	// filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$color1', endColorstr='$color2', GradientType=0);
+}
+
+/* Buttons */
+
+.btn-super-small, .btn-small, .btn-medium, .btn-great {
+	border: none;
+	border-radius: 3px;
+	outline: none;
+	cursor: pointer;
+	border: 1px solid #ddd;
+	text-align: center;
+	white-space: nowrap;
+	display: inline-block;
+	margin: 1px auto;
+}
+
+.btn-super-small:hover, .btn-small:hover, .btn-medium:hover, .btn-great:hover {
+	background: #ccc;
+	text-decoration: none;
+}
+
+.btn-super-small:active, .btn-small:active, .btn-medium:active, .btn-great:active {
+	background: #bbb;
+}
+
+.btn-super-small:focus, .btn-small:focus, .btn-medium:focus, .btn-great:focus {
+	box-shadow: 1px 1px 2px #919191;
+}
+
+.btn-super-small {
+	padding: 3px;
+	font-size: 10px;
+}
+
+.btn-small {
+	padding: 5px;
+	font-size: 12px;
+}
+
+.btn-medium {
+	padding: 10px;
+	font-size: 14px;
+}
+
+.btn-great {
+	padding: 15px;
+	font-size: 16px;
+}
+
+@media only screen and (max-width: 600px) {
+
+}
+
+@media only screen and (max-width: 480px) {
+	.btn-super-small, .btn-small, .btn-medium, .btn-great {
+		width: 100%;
+		margin: 0 0 5px 0;
+		display: inline-block;
+	}
+}
+
+/* Button Gradient Colors */
+
+.btn-blue, .btn-yellow, .btn-green, .btn-red, .btn-gray {
+	color: #FFFFFF;
+	text-shadow: 1px 1px 1px #222;
+	box-shadow: inset 1px 1px 1px rgba(255, 255, 255, 0.8);
+	display: inline-block;
+}
+
+.btn-blue:focus, .btn-yellow:focus, .btn-green:focus, .btn-red:focus, .btn-gray:focus {
+	box-shadow: 1px 1px 2px #919191, inset 1px 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+.btn-blue {
+	color: #FFFFFF;
+	text-shadow: 1px 1px 1px #222222;
+	border: 1px solid #0069B4;
+	@include linear-gradient(#0099ff, 0%, #0082c9, 40%, #005daa, 100%);
+
+	&:hover {
+		@include linear-gradient(#009be2, 0%, #006da0, 40%, #005682, 100%);
+	}
+	&:active {
+		@include linear-gradient(#005daa, 0%, #0082c9, 60%, #0099ff, 100%);
+	}
+}
+
+.btn-red {
+	color: #FFFFFF;
+	text-shadow: 1px 1px 1px #222222;
+	border: 1px solid #FF0909;
+	@include linear-gradient(#ffaaaa, 0%, #ff4f4f, 40%, #ff0000, 100%);
+	&:hover {
+		@include linear-gradient(#ff8989, 0%, #ff2b2b, 40%, #ea0000, 100%);
+	}
+	&:active {
+		@include linear-gradient(#ff0000, 0%, #ff4f4f, 60%, #ffaaaa, 100%);
+	}
+}
+
+.btn-green {
+	color: #FFFFFF;
+	text-shadow: 1px 1px 1px #222222;
+	border: 1px solid #23E51D;
+	@include linear-gradient(#77ff77, 0%, #54ff54, 40%, #0ad800, 100%);
+	&:hover {
+		@include linear-gradient(#02ff02, 0%, #1eff1e, 40%, #18d300, 100%);
+	}
+	&:active {
+		@include linear-gradient(#0ad800, 0%, #54ff54, 60%, #77ff77, 100%);
+	}
+}
+
+.btn-yellow {
+	color: #FFFFFF;
+	text-shadow: 1px 1px 1px #222222;
+	border: 1px solid #FAFF0D;
+	@include linear-gradient(#fcff84, 0%, #fbff1e, 40%, #ffe100, 100%);
+	&:hover {
+		@include linear-gradient(#fcff66, 0%, #faff0a, 40%, #f2da00, 100%);
+	}
+	&:active {
+		@include linear-gradient(#ffe100, 0%, #fbff1e, 60%, #fcff84, 100%);
+	}
+}
+
+.btn-gray {
+	color: #FFFFFF;
+	text-shadow: 1px 1px 1px #222222;
+	border: 1px solid #A2A2A2;
+	@include linear-gradient(#dbdbdb, 0%, #bababa, 47%, #848484, 100%);
+	&:hover {
+		@include linear-gradient(#aaaaaa, 0%, #8c8c8c, 40%, #595959, 100%);
+	}
+	&:active {
+		@include linear-gradient(#848484, 0%, #bababa, 47%, #dbdbdb, 99%);
+	}
+}

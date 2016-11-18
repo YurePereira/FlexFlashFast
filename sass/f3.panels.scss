@@ -1,0 +1,117 @@
+/*
+Author: Francisco Yure <yure.pereira@weyes.com.br>;
+Date: 2015-09-17;
+Enterprise: Weyes <weyes.com.br>;
+*/
+
+//Panel size
+.panel-super-small {
+
+  .panel-header {
+    padding: 6px;
+    font-size: .8em;
+  }
+
+  .panel-divisor {
+    margin: -10px 5px 0px 5px;
+    padding: 5px 0px 5px 0px;
+  }
+
+}
+
+.panel-small {
+
+  .panel-header {
+    padding: 10px;
+    font-size: 1em;
+  }
+
+  .panel-divisor {
+    margin: -12px 10px -10px 10px;
+    padding: 10px 0px 10px 0px;
+  }
+
+}
+
+.panel-medium {
+
+  .panel-header {
+    padding: 15px;
+    font-size: 1.2em;
+  }
+
+  .panel-divisor {
+    margin: -12px 10px -10px 10px;
+    padding: 15px 0px 15px 0px;
+  }
+
+}
+
+.panel-great {
+
+  .panel-header {
+    padding: 20px;
+    font-size: 1.4em;
+  }
+
+  .panel-divisor {
+    margin: -12px 10px -10px 10px;
+    padding: 19px 0px 19px 0px;
+  }
+
+}
+
+.panel {
+
+  margin: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+
+  .panel-header {
+    border-bottom: 1px solid #ddd;
+    // padding: 10px;
+    background: #F9F9F9;
+    // font-size: 16px;
+  }
+
+  .panel-content {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .panel-footer {
+    border-top: 1px solid #ddd;
+    padding: 10px;
+    background: #F9F9F9;
+    font-size: 12px;
+  }
+
+  .panel-divisor {
+    border-left: 1px solid #DDDDDD;
+    border-right: 1px solid #FEFEFE;
+    // margin: -12px 10px -10px 10px;
+    // padding: 10px 0px 10px 0px;
+  }
+
+  //panels types
+  .error, .warning, .notice, .message, .success {
+
+  }
+
+  .error {
+
+  }
+  .warning {
+
+  }
+  .notice {
+
+  }
+  .message {
+
+  }
+  .success {
+
+  }
+
+}

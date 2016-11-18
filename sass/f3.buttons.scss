@@ -1,0 +1,298 @@
+/* Buttons */
+
+//Buttons colors
+//Color default
+$colorDefault: transparent;
+$colorDefaultHover: transparent;
+$colorDefaultActive: transparent;
+$colorDefaultFocus: transparent;
+$colorDefaultBorder: #ababab;
+$colorDefaultBorderHover: #9c9c9c;
+$colorDefaultBorderActive: #d5d5d5;
+$colorDefaultBorderFocus: #969696;
+
+//Color blue
+$colorBlue: #4d8ab3;
+$colorBlueHover: #467b9f;
+$colorBlueActive: #417090;
+$colorBlueFocus: #446A84;
+$colorBlueBorder: #3f6784;
+$colorBlueBorderHover: #385b74;
+$colorBlueBorderActive: #365469;
+$colorBlueBorderFocus: #334D5F;
+
+//Color Red
+$colorRed: #e33d3d;
+$colorRedHover: #d54747;
+$colorRedActive: #d24c4c;
+$colorRedFocus: #ce5151;
+$colorRedBorder: #cf5252;
+$colorRedBorderHover: #bf5757;
+$colorRedBorderActive: #b04d4d;
+$colorRedBorderFocus: #a55050;
+
+//Color Yellow
+$textColorYellow: #727435;
+$colorYellow: #F7FB34;
+$colorYellowHover: #EEF23B;
+$colorYellowActive: #E0E440;
+$colorYellowFocus: #D9DD50;
+$colorYellowBorder: #C8CB3F;
+$colorYellowBorderHover: #385b74;
+$colorYellowBorderActive: #365469;
+$colorYellowBorderFocus: #334D5F;
+
+//Color Green
+$colorGreen: #4ece4e;
+$colorGreenHover: #54c554;
+$colorGreenActive: #54b654;
+$colorGreenFocus: #5bbc5b;
+$colorGreenBorder: #5bbc5b;
+$colorGreenBorderHover: #62b462;
+$colorGreenBorderActive: #69ae69;
+$colorGreenBorderFocus: #6ba86b;
+
+//Color Gray
+$colorTextGray: #5a5a5a;
+$colorGray: #f0f0f0;
+$colorGrayHover: #dedede;
+$colorGrayActive: #d5d5d5;
+$colorGrayFocus: #cfcfcf;
+$colorGrayBorder: #ababab;
+$colorGrayBorderHover: #9c9c9c;
+$colorGrayBorderActive: #d5d5d5;
+$colorGrayBorderFocus: #969696;
+
+$colorBorderDisabled: #e3e3e3;
+$colorTextDisabled: #d2d2d2;
+$colorDisabled: #f5f5f5;
+
+.btn-super-small,
+.btn-small,
+.btn-medium,
+.btn-great {
+	border: none;
+	border-radius: 3px;
+	outline: none;
+	cursor: pointer;
+	border: 1px solid #cecece;
+	text-align: center;
+	white-space: nowrap;
+	display: inline-block;
+	margin: 1px auto;
+  color: #535353;
+  background-color: $colorDefault;
+  font-family: arial;
+  
+  &:hover {
+    background-color: $colorDefaultHover;
+    border-color: $colorDefaultBorder; 
+  }
+  
+  &:active {
+	  background-color: $colorDefaultActive;
+    border-color: $colorDefaultBorderActive;
+  }
+  
+  &:focus {
+    background-color: $colorDefaultFocus;
+    border-color: $colorDefaultBorderFocus;
+  }
+
+  &:disabled,
+  &:disabled:hover,
+  &:disabled:active,
+  &:disabled:focus {
+    @extend .btn-disabled;
+  }
+  
+}
+
+.btn-disabled {
+  border: 1px solid $colorBorderDisabled!important;
+  background-color: $colorDisabled!important;
+  color: $colorTextDisabled!important;
+}
+
+
+.btn-disabled {
+  @extends 
+}
+
+.btn-super-small {
+	padding: 3px;
+	font-size: 10px;
+}
+
+.btn-small {
+	padding: 5px;
+	font-size: 12px;
+}
+
+.btn-medium {
+	padding: 10px;
+	font-size: 14px;
+}
+
+.btn-great {
+	padding: 15px;
+	font-size: 16px;
+}
+
+@media only screen and (max-width: 600px) {
+
+}
+
+@media only screen and (max-width: 480px) {
+	.btn-super-small, .btn-small, .btn-medium, .btn-great {
+		width: 100%;
+		margin: 0 0 5px 0;
+		display: inline-block;
+	}
+}
+
+/* Button Gradient Colors */
+
+.btn-blue,
+.btn-yellow,
+.btn-green,
+.btn-red,
+.btn-gray {
+	color: #FFF;
+	display: inline-block;
+
+  &:focus {
+    //...
+  }
+
+}
+
+.btn-blue {
+	border: 1px solid $colorBlueBorder;
+  background-color: $colorBlue;
+
+	&:hover {
+	  background-color: $colorBlueHover;
+    border: 1px solid $colorBlueBorderHover;
+	}
+	&:active {
+	  background-color: $colorBlueActive;
+    border: 1px solid $colorBlueBorderActive;
+	}
+	&:focus {
+	  background-color: $colorBlueFocus;
+    border: 1px solid $colorBlueBorderFocus;
+	}
+}
+
+.btn-red {
+  background-color: $colorRed;
+	border: 1px solid $colorRedBorder;
+	
+  &:hover {
+    background-color: $colorRedHover;
+    border-color: $colorRedBorderHover;
+	}
+	&:active {
+	  background-color: $colorRedActive;
+	  border-color: $colorRedBorderActive;
+	}
+  
+  &:focus {
+    background-color: $colorRedFocus;
+    border-color: $colorRedBorderFocus;
+  }
+  
+}
+
+.btn-green {
+  background-color: $colorGreen;
+	border: 1px solid $colorGreenBorder;
+
+	&:hover {
+    background-color: $colorGreenHover;
+    border-color: $colorGreenBorderHover;
+	}
+	&:active {
+    background-color: $colorGreenActive;
+    border-color: $colorGreenBorderActive;
+	}
+	&:focus {
+    background-color: $colorGreenFocus;
+    border-color: $colorGreenBorderFocus;
+	}
+}
+
+.btn-yellow {
+	color: $textColorYellow;
+	border: 1px solid $colorYellowBorder;
+  background-color: $colorYellow;
+	
+  &:hover {
+    border-color: $colorYellowBorderHover;
+    background-color: $colorYellowHover;
+  }
+	&:active {
+    border-color: $colorYellowBorderActive;
+    background-color: $colorYellowActive;
+  }
+  &:focus {
+    border-color: $colorYellowBorderFocus;
+    background-color: $colorYellowFocus;
+  }
+  
+}
+
+.btn-gray {
+	border: 1px solid $colorGrayBorder;
+  background-color: $colorGray;
+	color: $colorTextGray;
+
+  &:hover {
+    border-color: $colorGrayBorderHover;
+    background-color: $colorGrayHover;
+  }
+	&:active {
+    border-color: $colorGrayBorderActive;
+    background-color: $colorGrayActive;
+  }
+  &:focus {
+    border-color: $colorGrayBorderFocus;
+    background-color: $colorGrayFocus;
+  }
+  
+}
+
+//Types buttons
+.btn-square {
+  border-radius: 0!important;
+}
+.btn-half-square {
+  
+  &.btn-super-small {
+    border-radius: 0 10px!important;
+  }
+ 
+  &.btn-small {
+    border-radius: 0 12px!important;
+  } 
+  
+  &.btn-medium {
+    border-radius: 0 18px!important;
+  } 
+  
+  &.btn-great {
+    border-radius: 0 20px!important;
+  } 
+  
+}
+.btn-half-round {
+  border-radius: 8px!important;
+}
+.btn-round {
+  border-radius: 50px!important;
+}
+
+.btn-full {
+  width: 100%;
+}
