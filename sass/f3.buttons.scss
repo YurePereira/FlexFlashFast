@@ -1,71 +1,7 @@
+
 /* Buttons */
 
-//Buttons colors
-//Color default
-$colorDefault: transparent;
-$colorDefaultHover: transparent;
-$colorDefaultActive: transparent;
-$colorDefaultFocus: transparent;
-$colorDefaultBorder: #ababab;
-$colorDefaultBorderHover: #9c9c9c;
-$colorDefaultBorderActive: #d5d5d5;
-$colorDefaultBorderFocus: #969696;
-
-//Color blue
-$colorBlue: #4d8ab3;
-$colorBlueHover: #467b9f;
-$colorBlueActive: #417090;
-$colorBlueFocus: #446A84;
-$colorBlueBorder: #3f6784;
-$colorBlueBorderHover: #385b74;
-$colorBlueBorderActive: #365469;
-$colorBlueBorderFocus: #334D5F;
-
-//Color Red
-$colorRed: #e33d3d;
-$colorRedHover: #d54747;
-$colorRedActive: #d24c4c;
-$colorRedFocus: #ce5151;
-$colorRedBorder: #cf5252;
-$colorRedBorderHover: #bf5757;
-$colorRedBorderActive: #b04d4d;
-$colorRedBorderFocus: #a55050;
-
-//Color Yellow
-$textColorYellow: #727435;
-$colorYellow: #F7FB34;
-$colorYellowHover: #EEF23B;
-$colorYellowActive: #E0E440;
-$colorYellowFocus: #D9DD50;
-$colorYellowBorder: #C8CB3F;
-$colorYellowBorderHover: #385b74;
-$colorYellowBorderActive: #365469;
-$colorYellowBorderFocus: #334D5F;
-
-//Color Green
-$colorGreen: #4ece4e;
-$colorGreenHover: #54c554;
-$colorGreenActive: #54b654;
-$colorGreenFocus: #5bbc5b;
-$colorGreenBorder: #5bbc5b;
-$colorGreenBorderHover: #62b462;
-$colorGreenBorderActive: #69ae69;
-$colorGreenBorderFocus: #6ba86b;
-
-//Color Gray
-$colorTextGray: #5a5a5a;
-$colorGray: #f0f0f0;
-$colorGrayHover: #dedede;
-$colorGrayActive: #d5d5d5;
-$colorGrayFocus: #cfcfcf;
-$colorGrayBorder: #ababab;
-$colorGrayBorderHover: #9c9c9c;
-$colorGrayBorderActive: #d5d5d5;
-$colorGrayBorderFocus: #969696;
-
-$colorBorderDisabled: #e3e3e3;
-$colorTextDisabled: #d2d2d2;
-$colorDisabled: #f5f5f5;
+@import 'f3.colors';
 
 .btn-super-small,
 .btn-small,
@@ -154,7 +90,7 @@ $colorDisabled: #f5f5f5;
 /* Button Gradient Colors */
 
 .btn-blue,
-.btn-yellow,
+.btn-orange,
 .btn-green,
 .btn-red,
 .btn-gray {
@@ -223,22 +159,21 @@ $colorDisabled: #f5f5f5;
 	}
 }
 
-.btn-yellow {
-	color: $textColorYellow;
-	border: 1px solid $colorYellowBorder;
-  background-color: $colorYellow;
+.btn-orange {
+	border: 1px solid $colorOrangeBorder;
+  background-color: $colorOrange;
 	
   &:hover {
-    border-color: $colorYellowBorderHover;
-    background-color: $colorYellowHover;
+    border-color: $colorOrangeBorderHover;
+    background-color: $colorOrangeHover;
   }
 	&:active {
-    border-color: $colorYellowBorderActive;
-    background-color: $colorYellowActive;
+    border-color: $colorOrangeBorderActive;
+    background-color: $colorOrangeActive;
   }
   &:focus {
-    border-color: $colorYellowBorderFocus;
-    background-color: $colorYellowFocus;
+    border-color: $colorOrangeBorderFocus;
+    background-color: $colorOrangeFocus;
   }
   
 }
