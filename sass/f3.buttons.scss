@@ -23,7 +23,8 @@
   
   &:hover {
     background-color: $colorDefaultHover;
-    border-color: $colorDefaultBorder; 
+    border-color: $colorDefaultBorder;
+    text-decoration: none;
   }
   
   &:active {

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login - F3</title>
+	<link rel=stylesheet href="../../css/f3.css">
+	<style type="text/css" media="screen">
+
+	body {
+		background-color: #fff;
+	}
+
+	#header {
+		background-color: #292929;
+		border-bottom: 1px solid #000;
+		margin-bottom: 10px;
+	}
+
+	#logo span.flex,
+	#logo span.flash,
+	#logo span.fast {
+		font-size: 30px;
+		line-height: 45px;
+	}
+
+	#logo span.flex {
+		color: #E33D3D;
+	}
+
+	#logo span.flash {
+		color: #4ECE4E;
+	}
+
+	#logo span.fast {
+		color: #4D8AB3;
+	}
+
+	#main-menu {
+
+	}
+
+	#main-menu ul {
+		float: right;
+	}
+
+	#main-menu ul li {
+		background-color: #292929;
+	}
+
+	#main-menu ul li:hover {
+		background-color: #424242;
+	}
+
+	#main-menu ul li a {
+		color: #fff;
+	}
+			
+	#task {
+		background: #f6f6f6;
+		border-radius: 8px;
+		padding: 20px;
+		border: 1px solid #959595;
+		margin-bottom: 10px;
+	}
+
+	#footer {
+		background-color: #292929;
+		border-top: 1px solid #000;
+		min-height: 60px; 
+	}
+
+	@media only screen and (max-width: 480px) {
+		
+		#task {
+	  		margin-top: 10px;
+	  	}
+	
+	}
+
+	</style>	
+</head>
+<body>
+
+<header id="header" class="">
+	<div class="container">
+		<div class="row">
+			<div id="logo" class="col-3">
+				<span class="flex">Flex</span>
+				<span class="flash">Flash</span>
+				<span class="fast">Fast</span>
+			</div>
+			<div id="main-menu" class="col-9 menu-wrap menu-medium">
+				<ul>
+				    <li><a href="">Menu item 1</a></li>
+				    <li><a href="">Menu item 1</a></li>
+				    <li><a href="">Menu item 1</a></li>
+				    <li><a href="">Menu item 1</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</header>
+
+	<div id="task" class="container">
+		<div class="row">
+			<div class="col-3">
+				<h2>Secondary menu</h2>
+				<hr>
+			</div>
+			<div class="col-9">
+				<h2>Registre task</h2>
+				<hr>
+				<form action="#" class="form" method="post" accept-charset="utf-8">
+					<div class="form-row">
+						<label class="col-12">Name:</label>
+						<input class="col-12" type="text" name="" value="" placeholder="Name task">
+					</div>
+					<div class="form-row">
+						<label class="col-12">Priority:</label>
+						<select class="col-12" name="">
+							<option value="">Low</option>
+							<option value="">Average</option>
+							<option value="">High middle</option>
+							<option value="">High</option>
+						</select>
+					</div>
+					<div class="form-row">
+						<label class="col-12">Description:</label>
+						<textarea class="col-12" rows="10"></textarea>
+					</div>
+					<div class="form-row">
+						<label class="col-12">Expected date:</label>
+						<input class="col-12" type="text" name="" value="" placeholder="Expected date">
+					</div>
+					<div class="form-row">
+						<hr>
+						<input type="button" class="btn-small btn-green" name="" value="Register">
+						<input type="reset" class="btn-small btn-red" name="" value="Clear">
+					</div>
+				</form>
+			</div>			
+		</div>		
+	</div>
+
+	<footer id="footer">
+		
+	</footer>
+</body>
+</html>

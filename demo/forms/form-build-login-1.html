@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login - F3</title>
+	<link rel=stylesheet href="../../css/f3.css">
+	<style type="text/css" media="screen">
+
+	body {
+		background-color: #f5f5f5;
+	}
+			
+	#login {
+		width: 300px;
+		margin-top: 100px;
+		background: #ececec;
+		border-radius: 8px;
+		padding: 20px;
+		border: 1px solid #959595;
+	}
+
+	@media only screen and (max-width: 480px) {
+		
+		#login {
+	  		margin-top: 10px;
+	  	}
+	
+	}
+
+	</style>	
+</head>
+<body>
+	<div id="login" class="container">
+		<div class="row">
+			<div class="col-12">
+				<h2>User login</h2>
+				<hr>
+				<form action="form-build-login-1_submit" class="form form-square" method="post" accept-charset="utf-8">
+					<div class="form-row">
+						<label class="col-12">Login:</label>
+						<input class="col-12" type="text" name="" value="">
+					</div>
+					<div class="form-row">
+						<label class="col-12">Password:</label>
+						<input class="col-12" type="password" name="" value="">
+					</div>
+					<div class="form-row">
+						<hr>
+						<input type="button" class="btn-medium btn-green" name="" value="Send">
+						<input type="reset" class="btn-medium btn-red" name="" value="Clear">
+					</div>
+					<div class="form-row">
+						<a href="#" class="col-6">Register</a>
+						<a href="#" class="col-6 text-right">Forget password</a>
+					</div>
+				</form>
+			</div>			
+		</div>		
+	</div>
+</body>
+</html>
